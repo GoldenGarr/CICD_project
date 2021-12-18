@@ -28,4 +28,4 @@ jobs:
         ./build/tests_work
     - name: Create_exe
       run:
-        mingw main.c -o main.exe
+        gcc main.c -o main.exe
