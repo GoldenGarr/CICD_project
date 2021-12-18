@@ -7,6 +7,7 @@ int wordcount(int argc, char *argv[3]);
 
 TEST(wordCountTest, empty_file) {
     ASSERT_EQ(mult(2, 4), 8);
+    ASSERT_EQ(mult(0, 1), 1);
 }
 
 int main(int argc, char** argv) {
