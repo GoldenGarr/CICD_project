@@ -2,7 +2,7 @@
 
 int wordcount(int argc, char* argv[3]) {
     FILE *file;
-    file = fopen(argv[argc - 1], "r");
+    file = fopen(argv[argc - 1 ], "r");
     char readChar;
     char previousChar = ' ';
     int linesAmount = 1;
