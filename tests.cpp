@@ -10,27 +10,6 @@ TEST(mult_test, some_values) {
     ASSERT_EQ(mult(0, 1), 0);
 }
 
-TEST(wordCountTest, empty_file) {
-    char *arr[3] = {"WordCount.exe", "-l", ".empty.txt"};
-    ASSERT_EQ(wordcount(3, arr), 0);
-    char *arr1[3] = {"WordCount.exe", "-c", "empty.txt"};
-    ASSERT_EQ(wordcount(3, arr1), 0);
-    char *arr2[3] = {"WordCount.exe", "-w", "empty.txt"};
-    ASSERT_EQ(wordcount(3, arr2), 0);
-}
-
-TEST(wordCountTest, empty_file_with_two_lines) {
-    char *arr[3] = {"WordCount.exe", "-l",
-                    "emptyWithTwoLines.txt"};
-    ASSERT_EQ(wordcount(3, arr), 2);
-    char *arr1[3] = {"WordCount.exe", "-c",
-                     "emptyWithTwoLines.txt"};
-    ASSERT_EQ(wordcount(3, arr1), 1);
-    char *arr2[3] = {"WordCount.exe", "-w",
-                     "emptyWithTwoLines.txt"};
-    ASSERT_EQ(wordcount(3, arr2), 0);
-}
-
 TEST(wordCountTest, two_lines) {
     char *arr[3] = {"WordCount.exe", "-l", "threeLines.txt"};
     ASSERT_EQ(wordcount(3, arr), 3);
