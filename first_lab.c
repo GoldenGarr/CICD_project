@@ -1,4 +1,4 @@
-#include <iostream>
+#include <stdio.h>
 #include <gtest/gtest.h>
 
 int wordcount(int argc, char* argv[3]) {
