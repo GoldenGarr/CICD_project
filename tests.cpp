@@ -1,4 +1,5 @@
 #include <gtest/gtest.h>
+#include <main.c>
 
 using testing::Eq;
 
